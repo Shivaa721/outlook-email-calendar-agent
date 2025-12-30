@@ -1,0 +1,39 @@
+# Outlook Email & Calendar Agent
+
+## Overview
+This project is an automation agent built using **n8n** that manages Outlook **email and calendar operations** through natural language instructions.
+
+The system uses an **orchestrator-based design** to route user requests to the correct action, such as sending emails or managing calendar events.
+
+## What This Agent Can Do
+- Send, reply to, draft, and delete Outlook emails
+- Create, update, retrieve, and delete calendar events
+- Handle scheduling requests using natural language
+- Maintain session-based context for conversations
+- Prevent duplicate events and manage conflicts
+
+## Architecture
+- Orchestrator Agent: Identifies intent and routes tasks
+- Email Agent: Handles all email-related operations
+- Calendar Agent: Manages calendar scheduling and updates
+
+## Tech Stack
+- n8n (Workflow Automation)
+- Microsoft Outlook API
+- Calendar API
+- OpenAI (for intent interpretation)
+
+## Use Cases
+- Personal productivity automation
+- Executive assistant systems
+- Enterprise email and scheduling workflows
+
+## How It Works
+1. User provides a natural language instruction
+2. Orchestrator determines whether it is an email or calendar task
+3. Task is delegated to the appropriate agent
+4. Action is executed and confirmed
+
+## Notes
+- This repository contains an exported **n8n workflow (JSON)**.
+- The workflow is designed for real-world automation scenarios.
